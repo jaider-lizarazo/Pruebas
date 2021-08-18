@@ -10,3 +10,6 @@ driver.maximize_window()
 bus = driver.find_element_by_id("search-anime")
 bus.send_keys("Tate no Yuusha no Nariagari")
 bus.send_keys(Keys.ENTER)
+
+anime = driver.find_element_by_css_selector("body > div.Wrapper > div > div > main > ul > li > article")
+anime.click()
